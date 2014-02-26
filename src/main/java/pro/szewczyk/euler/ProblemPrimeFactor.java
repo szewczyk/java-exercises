@@ -2,7 +2,7 @@ package pro.szewczyk.euler;
 
 public class ProblemPrimeFactor extends AbstractProblem<Long> {
 
-    private static final Long THE_NUMBER = 600_851_475_143l;
+    private static final Long THE_NUMBER = 851_475_143l;
 
     @Override
     public Long solveProblem() {

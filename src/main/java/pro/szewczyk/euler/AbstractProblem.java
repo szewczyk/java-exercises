@@ -17,6 +17,6 @@ public abstract class AbstractProblem<T> implements ProblemSolver<T> {
         System.out.println("Resolved in:");
         System.out.println(counter.elapsed(TimeUnit.MICROSECONDS) + "ms");
         System.out.println("Solution:");
-        System.out.print(solution);
+        System.out.println(solution);
     }
 }
