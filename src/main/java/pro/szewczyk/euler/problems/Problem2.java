@@ -36,4 +36,8 @@ public class Problem2 extends AbstractProblem<Long> {
 
         return ret;
     }
+
+    public static void main(final String[] args) {
+        new Problem2().printSolution();
+    }
 }

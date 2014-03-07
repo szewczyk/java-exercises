@@ -22,4 +22,8 @@ public class Problem1 extends AbstractProblem<Integer> {
         }
         return sum;
     }
+
+    public static void main(final String[] args) {
+        new Problem1().printSolution();
+    }
 }

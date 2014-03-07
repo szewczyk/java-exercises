@@ -38,4 +38,8 @@ public class Problem3 extends AbstractProblem<Long> {
         }
         return bigestPrimeFactor;
     }
+
+    public static void main(final String[] args) {
+        new Problem3().printSolution();
+    }
 }
