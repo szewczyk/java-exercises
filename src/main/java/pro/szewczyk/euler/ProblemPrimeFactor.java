@@ -22,7 +22,7 @@ public class ProblemPrimeFactor extends AbstractProblem<Long> {
         return prime;
     }
 
-    private boolean isPrime(final long primeToCheck) {
+    public boolean isPrime(final long primeToCheck) {
         for (int i = 1; i < primeToCheck / 2 + 1; i += 2) {
             if (i % primeToCheck == 0) {
                 return false;
