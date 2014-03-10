@@ -1,6 +1,4 @@
 *.class
-
-# Package Files #
 *.jar
 *.war
 *.ear
@@ -8,3 +6,5 @@
 /.classpath
 /.project
 /.settings
+/.idea
+java-exercises.iml

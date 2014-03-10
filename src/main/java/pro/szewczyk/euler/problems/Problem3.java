@@ -12,31 +12,31 @@ public class Problem3 extends AbstractProblem<Long> {
     private static final Long THE_NUMBER = 600_851_475_143l;
 
     /**
-     * Znajdujê najwiêkszy czynnik pierwszy dla liczby {@value #THE_NUMBER}
+     * Znajduje najwiÄ™kszy czynnik pierwszy dla liczby {@value #THE_NUMBER}
      */
     @Override
     public Long solveProblem() {
         Long leftsOver = THE_NUMBER;
-        Long bigestPrimeFactor = 0l;
+        Long biggestPrimeFactor = 0l;
 
         if (leftsOver % 2 == 0) {
-            bigestPrimeFactor = 2l;
+            biggestPrimeFactor = 2l;
             leftsOver = leftsOver / 2l;
             if (leftsOver < 3) {
-                return bigestPrimeFactor;
+                return biggestPrimeFactor;
             }
         }
 
         for (Long i = 3l; i < THE_NUMBER / 2; i += 2) {
             if (leftsOver % i == 0) {
-                bigestPrimeFactor = i;
+                biggestPrimeFactor = i;
                 leftsOver = leftsOver / i;
                 if (leftsOver < 3) {
-                    return bigestPrimeFactor;
+                    return biggestPrimeFactor;
                 }
             }
         }
-        return bigestPrimeFactor;
+        return biggestPrimeFactor;
     }
 
     public static void main(final String[] args) {

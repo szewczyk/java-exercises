@@ -3,16 +3,15 @@ package pro.szewczyk.euler.problems;
 import pro.szewczyk.euler.AbstractProblem;
 
 /**
- * A palindromic number reads the same both ways. The largest palindrome made
- * from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest
- * palindrome made from the product of two 3-digit numbers.
+ * A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is
+ * 9009 = 91 * 99. Find the largest palindrome made from the product of two 3-digit numbers.
  * 
  * @author Mateusz Szewczyk
  */
 public class Problem4 extends AbstractProblem<Integer> {
 
     /**
-     * ZnajdŸ najwiêkszy polidrom który jest produtkem 3 cyfrowych liczb
+     * ZnajdÅ¼ najwiÄ™kszy polidrom ktÃ³ry jest produtkem 3 cyfrowych liczb
      */
     @Override
     public Integer solveProblem() {

@@ -1,12 +1,11 @@
 package pro.szewczyk.vaadin;
 
-import static org.junit.Assert.assertEquals;
+import com.google.common.base.Stopwatch;
+import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Test;
-
-import com.google.common.base.Stopwatch;
+import static org.junit.Assert.assertEquals;
 
 public class BestPathFinderTest {
 
@@ -15,9 +14,9 @@ public class BestPathFinderTest {
     @Test
     public final void speedTest() {
         final BestPathFinder solver = new BestPathFinder();
-        final Stopwatch couter = Stopwatch.createStarted();
+        final Stopwatch counter = Stopwatch.createStarted();
         final int ret = solver.solution(testData);
-        final long elapse = couter.elapsed(TimeUnit.MILLISECONDS);
+        final long elapse = counter.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("Elapsed: " + elapse);
         assertEquals(15, ret);
     }
@@ -27,9 +26,9 @@ public class BestPathFinderTest {
     @Test
     public final void speedTest2() {
         final BestPathFinder solver = new BestPathFinder();
-        final Stopwatch couter = Stopwatch.createStarted();
+        final Stopwatch counter = Stopwatch.createStarted();
         final int ret = solver.solution(testData2);
-        final long elapse = couter.elapsed(TimeUnit.MILLISECONDS);
+        final long elapse = counter.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("Elapsed: " + elapse);
         assertEquals(6, ret);
     }

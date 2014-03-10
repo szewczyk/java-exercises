@@ -1,8 +1,8 @@
 package pro.szewczyk.sevenn;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class EqualIndexTest {
 
@@ -36,7 +36,7 @@ public class EqualIndexTest {
     }
 
     @Test
-    public void testPyramide() {
+    public void testPyramid() {
         final EqualIndex engine = new EqualIndex();
         for (int i = 1; i < 5000; i++) {
             if (i % 2 == 0) {

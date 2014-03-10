@@ -1,12 +1,11 @@
 package pro.szewczyk.vaadin;
 
-import static org.junit.Assert.assertTrue;
+import com.google.common.base.Stopwatch;
+import org.junit.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Test;
-
-import com.google.common.base.Stopwatch;
+import static org.junit.Assert.assertTrue;
 
 public class MinDistanceFinderTest {
 
@@ -15,9 +14,9 @@ public class MinDistanceFinderTest {
     @Test
     public final void testSpeed() {
         final MinDistanceFinder solver = new MinDistanceFinder();
-        final Stopwatch couter = Stopwatch.createStarted();
+        final Stopwatch counter = Stopwatch.createStarted();
         final int ret = solver.solution(demoValue);
-        final long elapse = couter.elapsed(TimeUnit.MILLISECONDS);
+        final long elapse = counter.elapsed(TimeUnit.MILLISECONDS);
         System.out.println("Elapsed: " + elapse);
 
         assertTrue("ret: " + ret + " != 2", ret == 2);

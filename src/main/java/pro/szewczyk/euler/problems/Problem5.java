@@ -1,16 +1,14 @@
 package pro.szewczyk.euler.problems;
 
-import java.util.List;
-
+import com.google.common.collect.Lists;
 import pro.szewczyk.euler.AbstractProblem;
 import pro.szewczyk.euler.ProblemPrimeFactor;
 
-import com.google.common.collect.Lists;
+import java.util.List;
 
 /**
- * 2520 is the smallest number that can be divided by each of the numbers from 1
- * to 10 without any remainder. What is the smallest positive number that is
- * evenly divisible by all of the numbers from 1 to 20?
+ * 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is
+ * the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
  * 
  * @author Mateusz Szewczyk
  */
@@ -21,8 +19,7 @@ public class Problem5 extends AbstractProblem<Integer> {
     private List<Integer> primeList;
 
     /**
-     * Znajduje najmniejsz¹ liczbê podzieln¹ przez liczby od 1 do
-     * {@value #MAX_DIVIDER}
+     * Znajduje najmniejszÄ… liczbÄ™ podzielnÄ… przez liczby od 1 do {@value #MAX_DIVIDER}
      */
     @Override
     public Integer solveProblem() {

@@ -16,11 +16,11 @@ public class Problem2 extends AbstractProblem<Long> {
     private static final Long M_4 = 4_000_000l;
 
     /**
-     * ZnajdŸ sumê pa¿ystych liczb z ci¹gu fibonaciego mniejszych od 4 milionów
+     * ZnajdÅº sumÄ™ paÅ¼ystych liczb z ciÄ…gu fibonaciego mniejszych od 4 mln
      */
     @Override
     public Long solveProblem() {
-        Long tmp = 0l;
+        Long tmp;
         Long sum_l = 0l;
         Long sum_r = 1l;
         Long ret = 0l;

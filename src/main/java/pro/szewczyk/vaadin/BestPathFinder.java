@@ -11,7 +11,7 @@ class BestPathFinder {
         final int M = A[0].length;
 
         int i, j;
-        // sum first collumn
+        // sum first column
         for (i = 1; i < N; i++) {
             A[i][0] += A[i - 1][0];
         }
