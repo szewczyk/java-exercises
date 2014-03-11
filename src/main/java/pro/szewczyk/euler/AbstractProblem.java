@@ -1,8 +1,8 @@
 package pro.szewczyk.euler;
 
-import java.util.concurrent.TimeUnit;
-
 import com.google.common.base.Stopwatch;
+
+import java.util.concurrent.TimeUnit;
 
 public abstract class AbstractProblem<T> implements ProblemSolver<T> {
 
@@ -12,7 +12,7 @@ public abstract class AbstractProblem<T> implements ProblemSolver<T> {
         final T solution = solveProblem();
         counter.stop();
         System.out.println("Resolved in:");
-        System.out.println(counter.elapsed(TimeUnit.MILLISECONDS) + "ms");
+        System.out.println(counter.elapsed(TimeUnit.MICROSECONDS) + " micro seconds");
         System.out.println("Solution:");
         System.out.println(solution);
     }
