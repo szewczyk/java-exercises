@@ -10,9 +10,6 @@ import pro.szewczyk.euler.AbstractProblem;
  */
 public class Problem4 extends AbstractProblem<Integer> {
 
-    /**
-     * Znajdż największy polidrom który jest produtkem 3 cyfrowych liczb
-     */
     @Override
     public Integer solveProblem() {
         Integer ret = 0;

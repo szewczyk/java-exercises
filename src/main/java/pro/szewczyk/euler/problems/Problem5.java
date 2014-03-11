@@ -2,7 +2,7 @@ package pro.szewczyk.euler.problems;
 
 import com.google.common.collect.Lists;
 import pro.szewczyk.euler.AbstractProblem;
-import pro.szewczyk.euler.ProblemPrimeFactor;
+import pro.szewczyk.euler.PrimeFactor;
 
 import java.util.List;
 
@@ -18,9 +18,6 @@ public class Problem5 extends AbstractProblem<Integer> {
 
     private List<Integer> primeList;
 
-    /**
-     * Znajduje najmniejszą liczbę podzielną przez liczby od 1 do {@value #MAX_DIVIDER}
-     */
     @Override
     public Integer solveProblem() {
         Integer ret = MAX_DIVIDER;
@@ -53,7 +50,7 @@ public class Problem5 extends AbstractProblem<Integer> {
      */
     protected List<Integer> getPrimeList(final Integer maxNumber) {
         final List<Integer> primeList = Lists.newArrayList();
-        final ProblemPrimeFactor primeFactor = new ProblemPrimeFactor();
+        final PrimeFactor primeFactor = new PrimeFactor();
 
         for (int i = maxNumber; i >= 2; i--) {
             if (primeFactor.isPrime(i)) {

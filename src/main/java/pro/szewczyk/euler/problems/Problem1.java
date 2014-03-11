@@ -8,9 +8,7 @@ import pro.szewczyk.euler.AbstractProblem;
  * 
  */
 public class Problem1 extends AbstractProblem<Integer> {
-    /**
-     * Znajduje sumę dla licz od 0 do 1000 które sa podzielne przez 3 lub 5.
-     */
+
     @Override
     public Integer solveProblem() {
         int sum = 0;

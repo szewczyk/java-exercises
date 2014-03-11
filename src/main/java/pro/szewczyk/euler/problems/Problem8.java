@@ -14,9 +14,6 @@ public class Problem8 extends AbstractProblem<Integer> {
 
     private static final int CHAR_ZERO_BASE = '0';
 
-    /**
-     * Find the greatest product of five consecutive digits in the 1000-digit number.
-     */
     @Override
     public Integer solveProblem() {
         int tmp = 1;

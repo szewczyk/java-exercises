@@ -1,8 +1,8 @@
 package pro.szewczyk.euler.problems;
 
-import java.math.BigInteger;
-
 import pro.szewczyk.euler.AbstractProblem;
+
+import java.math.BigInteger;
 
 /**
  * The sum of the squares of the first ten natural numbers is, <br>
@@ -21,8 +21,6 @@ public class Problem6 extends AbstractProblem<BigInteger> {
     private static final int FIRST_NUMBERS = 100;
 
     /**
-     * Znajduje różnicę sumy liczb do kwadratu od sumy kwadratów liczb
-     * 
      * @deprecated ugly resolution
      */
     @Override
