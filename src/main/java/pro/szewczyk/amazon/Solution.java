@@ -7,8 +7,8 @@ public class Solution {
     public static void main(String[] param) {
         Scanner s = new Scanner(System.in);
         int N = s.nextInt();
-        if (N < 0) {
-            System.out.print("ERROR");
+        if (N <= 0) {
+            System.out.println("ERROR");
             return;
         }
         // eat white spaces
@@ -23,12 +23,12 @@ public class Solution {
                     tab[i][j] = Integer.parseInt(ints[j]);
                 }
             } else {
-                System.out.print("ERROR");
+                System.out.println("ERROR");
                 return;
             }
         }
         if (!validDimension(tab)) {
-            System.out.print("ERROR");
+            System.out.println("ERROR");
             return;
         }
 
@@ -77,7 +77,7 @@ public class Solution {
     }
 
     private static boolean validDimension(final int[][] tab) {
-        if (tab == null || tab[0] == null || tab.length != tab[0].length) {
+        if (tab == null || tab.length == 0 || tab[0] == null || tab.length != tab[0].length) {
             return false;
         }
         for (final int[] aTab : tab) {
