@@ -2,7 +2,7 @@ package pro.szewczyk.vaadin;
 
 public class BubbleSort {
     public static void main(final String[] args) {
-        final int[] foo = { 5, 2, 3, 4, 5, 1, 1, 9, 4, 1, 5, 3, 7, 4, 9, 3, 5, 7, 5 };
+        final int[] foo = {5, 2, 3, 4, 5, 1, 1, 9, 4, 1, 5, 3, 7, 4, 9, 3, 5, 7, 5};
 
         final int[] sortedItems = bubbleSort(foo);
         for (int i = 0; i < sortedItems.length; i++) {

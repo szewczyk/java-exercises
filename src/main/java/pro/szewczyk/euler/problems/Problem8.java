@@ -4,7 +4,7 @@ import pro.szewczyk.euler.AbstractProblem;
 
 /**
  * Find the greatest product of five consecutive digits in the 1000-digit number.
- * 
+ *
  * @author Mateusz Szewczyk
  */
 public class Problem8 extends AbstractProblem<Integer> {

@@ -9,7 +9,7 @@ import java.util.List;
 /**
  * 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is
  * the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
- * 
+ *
  * @author Mateusz Szewczyk
  */
 public class Problem5 extends AbstractProblem<Integer> {
@@ -43,9 +43,8 @@ public class Problem5 extends AbstractProblem<Integer> {
 
     /**
      * Generate prime list lower then maxNumber
-     * 
-     * @param maxNumber
-     *            greatest possible prime number
+     *
+     * @param maxNumber greatest possible prime number
      * @return prime list from up to maxNumber to 2 (including)
      */
     protected List<Integer> getPrimeList(final Integer maxNumber) {

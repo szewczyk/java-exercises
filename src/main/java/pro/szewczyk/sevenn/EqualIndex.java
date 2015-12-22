@@ -1,4 +1,5 @@
 package pro.szewczyk.sevenn;
+
 import java.math.BigDecimal;
 
 public class EqualIndex {

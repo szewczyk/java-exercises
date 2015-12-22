@@ -2,13 +2,13 @@ package pro.szewczyk.vaadin;
 
 public class SumFinder {
     public static void main(final String[] args) {
-        final Integer[] chainTest = { 1, 2, 3, 4 };
+        final Integer[] chainTest = {1, 2, 3, 4};
         System.out.println(smallestSumNew(chainTest));
 
-        final Integer[] chain = { 1, 2, 3, 9, 6, 4, 7 };
+        final Integer[] chain = {1, 2, 3, 9, 6, 4, 7};
         System.out.println(smallestSumNew(chain));
 
-        final Integer[] chainTree = { 9, 5, 2, 1, 2, 5, 9 };
+        final Integer[] chainTree = {9, 5, 2, 1, 2, 5, 9};
         System.out.println(smallestSumNew(chainTree));
     }
 
@@ -71,7 +71,7 @@ public class SumFinder {
 
         if ((Math.abs(secondPosition - thirdPosition) > 1)
                 && ((fourthPosition == -1) || (Math.abs(firstPosition - fourthPosition) <= 1) || (secondNumber
-                        + thirdNumber <= firstNumber + fourthNumber))) {
+                + thirdNumber <= firstNumber + fourthNumber))) {
             return secondNumber + thirdNumber;
         }
 
